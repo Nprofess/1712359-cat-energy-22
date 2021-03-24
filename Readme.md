@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Надежда](https://up.htmlacademy.ru/adaptive/22/user/1712359).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков] (https://htmlacademy.ru/profile/stalyer).
 
 ---
 
