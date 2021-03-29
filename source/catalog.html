@@ -56,10 +56,10 @@
                 <a href="index.html">Главная</a>
               </li>
               <li class="main-nav__item">
-                <a href="catalog.html">Каталог продукции</a>
+                <a>Каталог продукции</a>
               </li>
               <li class="main-nav__item">
-                <a>Подбор программы</a>
+                <a href="program.html">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -68,111 +68,177 @@
 
       <main class="page-main">
         <div class="page-main__wrapper">
-          <h1 class="page-main__title">Подбор программы</h1>
-          <form class="form" action="https://echo.htmlacademy.ru/" method="GET">
-            <p class="form__title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Данные кота</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label">Имя:*
-                  <input class="form__input" type="text" name="name" placeholder="Барсик" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label">Вес (кг):*
-                  <input class="form__data-input" type="text" name="weight" placeholder="7" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label">Возраст (лет):
-                  <input class="form__input" type="text" name="age" placeholder="7">
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Выбор программы</legend>
-            <ul class="form__list-radio">
-              <li class="form__item-radio">
-                <label class="form__label-radio">
-                  <input class="form__input-radio" type="radio" name="choice-program" value="weight loss" checked>
-                  Похудение
-                </label>
-              </li>
-              <li class="form__item-radio">
-                <label class="form__label-radio">
-                  <input class="form__input-radio" type="radio" name="choice-program" value="weight gain">
-                  Набор массы
-                </label>
-              </li>
-              <li class="form__item-radio">
-                <label class="form__label-radio">
-                  <input class="form__input-radio" type="radio" name="choice-program" value="need some advice">
-                  Не знаю (Нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
-            <ul class="form__list">
-              <li class="form__item">
-                <label class="form__label">E-mail:*
-                  <input class="form__input form__input-Email" type="email" name="E-mail" placeholder="kuklachev@gmail.com" required>
-                </label>
-              </li>
-              <li class="form__item">
-                <label class="form__label">Телефон:*
-                  <input class="form__input form__input-tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Комментарий</legend>
-            <label class="form__label ">Введите комментарий
-              <textarea class="form__textarea" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повАдках кота"></textarea>
-            </label>
-          </fieldset>
-
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Дополнительно</legend>
-            <ul class="form__list-checkbox">
-              <li class="form__item-checkbox">
-                <label class="form__label-checkbox">
-                  <input class="form__input-checkbox" type="checkbox" name="sweetener" checked>
-                  Сахарозаменитель
-                </label>
-              </li>
-              <li class="form__item-checkbox">
-                <label class="form__label-checkbox">
-                  <input class="form__input-checkbox" type="checkbox" name="drinking water">
-                  Питьевая вода
-                </label>
-              </li>
-              <li class="form__item-checkbox">
-                <label class="form__label-checkbox">
-                  <input class="form__input-checkbox" type="checkbox" name="milk">
-                  Молоко
-                </label>
-              </li>
-              <li class="form__item-checkbox">
-                <label class="form__label-checkbox">
-                  <input class="form__input-checkbox" type="checkbox" name="vitamins">
-                  Витамины
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="form__button-submit button" type="submit">Отправить заявку</button>
-          <small class="form__memo-fields">* — Обязательные поля</small>
-          </form>
-
-          <section class="contacts">
+          <h1 class="page-main__title">Каталог продукции</h1>
+          <section class="products">
+            <h2 class="visually-hidden">Список товаров</h2>
+            <ul class="products__list">
+                <li class="products__item">
+                  <div class="products__item-container">
+                    <img src="img/catalog/catalog-1-desktop 1.png" width="68" height="86" alt="Фото корма Cat Energy PRO 500 г со вкусом курицы">
+                  <div class="products__item-container-info">
+                    <h3 class="products__name">Cat Energy PRO 500 г</h3>
+                    <dl class="products__specifications">
+                      <dt class="products__specifications-term">Масса</dt>
+                      <dd class="products__specifications-definition">500 г</dd>
+                      <dt class="products__specifications-term">Вкус</dt>
+                      <dd class="products__specifications-definition">Курица</dd>
+                      <dt class="products__specifications-term">Цена</dt>
+                      <dd class="products__specifications-definition">700 Р.</dd>
+                    </dl>
+                  </div>
+                  </div>
+                    <button class="products__button-order button" type="button">Заказать</button>
+                </li>
+                <li class="products__item">
+                  <div class="products__item-container">
+                    <img src="img/catalog/catalog-2-desktop 1.png" width="84" height="101" alt="Фото корма Cat Energy PRO 1000 г со вкусом курицы">
+                  <div class="products__item-container-info">
+                    <h3 class="products__name">Cat Energy PRO 1000 г</h3>
+                    <dl class="products__specifications">
+                      <dt class="products__specifications-term">Масса</dt>
+                      <dd class="products__specifications-definition">1000 г</dd>
+                      <dt class="products__specifications-term">Вкус</dt>
+                      <dd class="products__specifications-definition">Курица</dd>
+                      <dt class="products__specifications-term">Цена</dt>
+                      <dd class="products__specifications-definition">1000 Р.</dd>
+                    </dl>
+                  </div>
+                  </div>
+                  <button class="products__button-order button" type="button">Заказать</button>
+                </li>
+                <li class="products__item">
+                  <div class="products__item-container">
+                    <img src="img/catalog/catalog-3-desktop.png" width="68" height="78" alt="Фото корма Cat Energy PRO 500 г со вкусом рыбы">
+                  <div class="products__item-container-info">
+                    <h3 class="products__name">Cat Energy PRO 500 г</h3>
+                    <dl class="products__specifications">
+                      <dt class="products__specifications-term">Масса</dt>
+                      <dd class="products__specifications-definition">500 г</dd>
+                      <dt class="products__specifications-term">Вкус</dt>
+                      <dd class="products__specifications-definition">Рыба</dd>
+                      <dt class="products__specifications-term">Цена</dt>
+                      <dd class="products__specifications-definition">700 Р.</dd>
+                    </dl>
+                  </div>
+                  </div>
+                  <button class="products__button-order button" type="button">Заказать</button>
+                </li>
+                <li class="products__item">
+                  <div class="products__item-container">
+                    <img src="img/catalog/catalog-4-desktop 1.png" width="84" height="101" alt="Фото корма Cat Energy PRO 1000 г со вкусом рыбы">
+                  <div class="products__item-container-info">
+                    <h3 class="products__name">Cat Energy PRO 1000 г</h3>
+                    <dl class="products__specifications">
+                      <dt class="products__specifications-term">Масса</dt>
+                      <dd class="products__specifications-definition">1000 г</dd>
+                      <dt class="products__specifications-term">Вкус</dt>
+                      <dd class="products__specifications-definition">Рыба</dd>
+                      <dt class="products__specifications-term">Цена</dt>
+                      <dd class="products__specifications-definition">1000 Р.</dd>
+                    </dl>
+                  </div>
+                  </div>
+                  <button class="products__button-order button" type="button">Заказать</button>
+                </li>
+                <li class="products__item">
+                  <div class="products__item-container">
+                    <img src="img/catalog/catalog-5-desktop.png" width="68" height="78" alt="Фото корма Cat Energy PRO 500 г со вкусом гречки">
+                  <div class="products__item-container-info">
+                    <h3 class="products__name">Cat Energy PRO 500 г</h3>
+                    <dl class="products__specifications">
+                      <dt class="products__specifications-term">Масса</dt>
+                      <dd class="products__specifications-definition">500 г</dd>
+                      <dt class="products__specifications-term">Вкус</dt>
+                      <dd class="products__specifications-definition">Гречка</dd>
+                      <dt class="products__specifications-term">Цена</dt>
+                      <dd class="products__specifications-definition">400 Р.</dd>
+                    </dl>
+                  </div>
+                  </div>
+                  <button class="products__button-order button" type="button">Заказать</button>
+                </li>
+                <li class="products__item">
+                  <div class="products__item-container">
+                    <img src="img/catalog/catalog-6-desktop.png" width="84" height="100" alt="Фото корма Cat Energy PRO 1000 г со вкусом гречки">
+                  <div class="products__item-container-info">
+                    <h3 class="products__name">Cat Energy PRO 1000 г</h3>
+                    <dl class="products__specifications">
+                      <dt class="products__specifications-term">Масса</dt>
+                      <dd class="products__specifications-definition">1000 г</dd>
+                      <dt class="products__specifications-term">Вкус</dt>
+                      <dd class="products__specifications-definition">Гречка</dd>
+                      <dt class="products__specifications-term">Цена</dt>
+                      <dd class="products__specifications-definition">700 Р.</dd>
+                    </dl>
+                  </div>
+                  </div>
+                  <button class="products__button-order button" type="button">Заказать</button>
+                </li>
+                <li class="products__item">
+                  <div class="products__item-container">
+                    <img src="img/catalog/catalog-7-desktop.png" width="72" height="84" alt="Фото корма Cat Energy PRO 500 г со вкусом риса">
+                    <div class="products__item-container-info">
+                      <h3 class="products__name">Cat Energy PRO 500 г</h3>
+                      <dl class="products__specifications">
+                        <dt class="products__specifications-term">Масса</dt>
+                        <dd class="products__specifications-definition">500 г</dd>
+                        <dt class="products__specifications-term">Вкус</dt>
+                        <dd class="products__specifications-definition">Рис</dd>
+                        <dt class="products__specifications-term">Цена</dt>
+                        <dd class="products__specifications-definition">500 Р.</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <button class="products__button-order button" type="button">Заказать</button>
+                </li>
+              </ul>
+              <div class="all-products">
+                <h2 class="all-products__title">Показать еще 100500 товаров</h2>
+                <p class="all-products__subtitle">На самом деле вкусов гораздо больше!</p>
+                <a href="#" class="all-products__link button">Показать все</a>
+              </div>
+        </section>
+        <section class="additional-products">
+          <h2 class="additional-products__title">Дополнительные товары</h2>
+          <ul class="additional-products__list">
+            <li class="additional-products__item">
+              <h3 class="additional-products__name">Сахарозаменитель</h3>
+              <dl class="additional-products__specifications">
+                <dt class="additional-products__specifications-term">1 упаковка (100 г)</dt>
+                <dd class="additional-products__specifications-definition">200 Р.</dd>
+              </dl>
+              <button class="additional-products__button-order button" type="button">Заказать</button>
+            </li>
+            <li class="additional-products__item">
+              <h3 class="additional-products__name">Питьевая вода</h3>
+              <dl class="additional-products__specifications">
+                <dt class="additional-products__specifications-term">5 литров</dt>
+                <dd class="additional-products__specifications-definition">50 Р.</dd>
+              </dl>
+              <button class="additional-products__button-order button" type="button">Заказать</button>
+            </li>
+            <li class="additional-products__item">
+              <h3 class="additional-products__name">Молоко</h3>
+              <dl class="additional-products__specifications">
+                <dt class="additional-products__specifications-term">1 литр</dt>
+                <dd class="additional-products__specifications-definition">100 Р.</dd>
+              </dl>
+              <button class="additional-products__button-order button" type="button">Заказать</button>
+            </li>
+            <li class="additional-products__item">
+              <h3 class="additional-products__name">Витамины</h3>
+              <dl class="additional-products__specifications">
+                <dt class="additional-products__specifications-term">1 упаковка (30 г)</dt>
+                <dd class="additional-products__specifications-definition">300 Р.</dd>
+              </dl>
+              <button class="additional-products__button-order button" type="button">Заказать</button>
+            </li>
+          </ul>
+          <a class="promo" href="#">
+            <h3 class="promo__title">Закажите все и получите чехол для кота в подарок!</h3>
+          </a>
+        </section>
+        <section class="contacts">
             <div class="contacts__container">
               <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
               <div class="contacts__address">
@@ -181,7 +247,7 @@
               </div>
             </div>
             <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716382862!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616775586358!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </section>
+        </section>
         </div>
       </main>
       <footer class="page-footer">
