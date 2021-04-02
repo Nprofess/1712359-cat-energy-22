@@ -1,0 +1,76 @@
+.nutrition-programs {
+  margin-top: 22px;
+  color: $color-text;
+}
+
+.nutrition-programs__container {
+  background-color: $basic-grey;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.nutrition-programs__title {
+  margin: 0;
+  padding: 30px 79px 29px 91px;
+  text-transform: uppercase;
+  color: $basic-black;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+}
+
+.nutrition-programs--slim::before {
+  content: url("../../img/cat_slim.svg");
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  left: 22px;
+  top: 24px;
+}
+
+.nutrition-programs--pro::before {
+  content: url("../../img/cat_pro.svg");
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  left: 22px;
+  top: 24px;
+}
+
+.nutrition-programs__text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding-bottom: 23px;
+  text-align: start;
+}
+
+.nutrition-programs__link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  padding: 19px 0 22px 0;
+  color: $basic-black;
+  position: relative;
+
+  &::after {
+    content: url("../../img/icon-arrow.svg");
+    position: absolute;
+    left: 100px;
+  }
+}
+
+.nutrition-programs__text-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: 1px solid $border;
+}
+
+.nutrition-programs__link-wrapper {
+  margin-left: 20px;
+  margin-right: 20px;
+}

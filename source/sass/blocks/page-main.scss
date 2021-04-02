@@ -1,0 +1,38 @@
+.page-main {
+  color: $basic-black;
+  text-align: center;
+}
+
+.page-main__wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-main__intro {
+  margin: 0 0;
+  color: $basic-white;
+  background-image: url("../../img/index-background-desktop-2.jpg");
+  background-color: $background-green;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.page-main__title {
+  padding: 27px 35px 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.page-main__subtitle {
+  text-transform: uppercase;
+  padding: 25px 35px 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.page-main__select-program-link {
+  display: block;
+  margin: 0 20px;
+}

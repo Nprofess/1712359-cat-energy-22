@@ -1,0 +1,41 @@
+.main-nav {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+
+  &::before {
+    content: url("../../img/exit-menu.svg");
+  }
+}
+
+.main-nav__wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.main-nav__item {
+  text-transform: uppercase;
+  border-top: 1px solid $border-list;
+  padding: 22px 5px 24px 5px;
+  text-align: center;
+}
+
+.main-nav__item:nth-last-child(1) {
+  padding-bottom: 0;
+}
+
+.main-nav__item a {
+  color: $basic-black;
+}

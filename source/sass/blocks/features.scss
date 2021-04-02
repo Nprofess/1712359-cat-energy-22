@@ -1,0 +1,87 @@
+.features__title {
+  margin-top: 7px;
+  margin-bottom: 38px;
+  color: $basic-black;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.features__list {
+  list-style: none;
+  color: $color-text;
+}
+
+.features__item {
+  text-align: start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.features__item:nth-last-child(1) {
+  margin-bottom: 40px;
+}
+
+.features__item-text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  padding-left: 20px;
+}
+
+.features__item-health::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../../img/icon_leaf.svg");
+  background-color: $basic_green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 32px;
+  left: -40px;
+}
+
+.features__item-form::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../../img/icon_tub.svg");
+  background-color: $basic_green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 29px 31px;
+  left: -40px;
+}
+
+.features__item-dose::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../../img/icon_eat.svg");
+  background-color: $basic_green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px 30px;
+  left: -40px;
+}
+
+.features__item-benefit::before {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../../img/icon_alarm.svg");
+  background-color: $basic_green;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 32px 33px;
+  left: -40px;
+}
