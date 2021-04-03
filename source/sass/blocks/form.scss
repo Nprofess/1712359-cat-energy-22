@@ -37,7 +37,8 @@
   border-bottom: 1px solid $border;
 }
 
-.form__legend {
+.form__legend,
+.form__fieldset-title {
   padding-left: 20px;
   font-size: 24px;
   line-height: 26px;
@@ -106,8 +107,9 @@
   }
 }
 
-.form__label-comment {
+.form__fieldset-title-comment {
   padding: 0;
+  padding-left: 20px;
   font-size: 24px;
   line-height: 26px;
   text-transform: initial;

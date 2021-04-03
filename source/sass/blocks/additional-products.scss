@@ -1,4 +1,61 @@
-// удалить
-.copyright {
-  color: grey;
+.additional-products__title {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: start;
+  padding: 0;
+  padding-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 36px;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 22px;
+    height: 2px;
+    background: $basic_green;
+  }
+}
+
+.additional-products__list {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.additional-products__item {
+  border-top: 1px solid $border;
+
+  &:nth-last-child(1) {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.additional-products__name {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  color: $products-name;
+  font-weight: 400;
+}
+
+.additional-products__specifications {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.additional-products__specifications-term,
+.additional-products__specifications-definition {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text;
+}
+
+.additional-products__link-order {
+  display: block;
+  margin-bottom: 19px;
 }

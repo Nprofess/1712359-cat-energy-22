@@ -1,4 +1,93 @@
-// удалить
-.copyright {
-  color: grey;
+.products__list {
+  list-style: none;
+  margin-top: 41px;
+  padding: 0;
+}
+
+.products__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid $border;
+
+  &:nth-last-child(1) {
+    border-bottom: 1px solid $border;
+  }
+}
+
+.products__item-container--all {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: url("../../img/plus.svg");
+    width: 30px;
+    height: 30px;
+    top: -60px;
+    left: auto;
+  }
+}
+
+.products__name-link {
+  text-transform: uppercase;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $products-name;
+}
+
+.products__name-title {
+  font-weight: 400;
+}
+
+.products__specifications {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products__specifications-term,
+.products__specifications-definition {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text;
+}
+
+.products__specifications-term {
+  text-align: start;
+}
+
+.products__specifications-definition {
+  text-align: end;
+}
+
+.products__link-order {
+  display: block;
+  margin-top: 18px;
+}
+
+.products__title--all {
+  margin: 0;
+  margin-top: 60px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $contact-text;
+}
+
+.products__subtitle--all {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: $color-text;
+}
+
+.products__link--all {
+  display: block;
+  margin-top: 21px;
+  background-color: $basic-grey;
+  color: $color-text;
 }
