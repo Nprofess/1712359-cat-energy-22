@@ -11,17 +11,26 @@
 .page-main__intro {
   margin: 0 0;
   color: $basic-white;
-  background-image: url("../../img/index-background-desktop-2.jpg");
-  background-color: $background-green;
+  background-color: $basic_green-2;
+  background-image: linear-gradient(to top, $basic-white 170px, transparent 170px),
+    url("../../img/back-page-main_intro.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center center;
+  background-size: contain;
 }
 
+
 .page-main__title {
+  margin: 0;
   padding: 27px 35px 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+}
+
+.page-main__title-program {
+  padding-left: 20px;
+  text-align: start;
 }
 
 .page-main__subtitle {

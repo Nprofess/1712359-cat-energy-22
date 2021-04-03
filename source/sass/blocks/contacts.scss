@@ -1,5 +1,6 @@
 .contacts {
   color: $contact-text;
+  background-color: $basic-grey;
 }
 
 .contacts__container {
@@ -17,8 +18,16 @@
 .contacts__address-street-house,
 .contacts__address-city {
   color: $color-text;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+}
+
+.contacts--one-page {
+  background-color: $basic-white;
+}
+
+.contacts__map {
+  display: block;
 }

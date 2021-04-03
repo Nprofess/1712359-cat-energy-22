@@ -1,0 +1,13 @@
+.check {
+  padding-left: 46px;
+}
+
+.check__box {
+  position: absolute;
+  margin-top: -6px;
+
+  margin-left: -46px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/checkbox.svg");
+}

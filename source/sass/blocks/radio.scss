@@ -1,0 +1,13 @@
+.radio {
+  padding-left: 43px;
+}
+
+.radio__botton {
+  position: absolute;
+  margin-top: -6px;
+
+  margin-left: -43px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../img/radiobutton.svg");
+}
