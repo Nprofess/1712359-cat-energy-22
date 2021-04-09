@@ -1,4 +1,20 @@
-// удалить
-.copyright {
-  color: grey;
+.social-network__item-vk {
+  @media (min-width: $tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+
+.social-network__item-instagram {
+  @media (min-width: $tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.social-network__item-facebook {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }

@@ -2,6 +2,19 @@
   padding: 27px 20px 25px 20px;
   color: $basic-black;
   background-color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 30px 25px 30px;
+    background-color: $basic-white;
+    background-image: linear-gradient(to top, #eaeaea 220px, transparent 220px);
+  }
+
+  @media (min-width: $desktop-width) {
+
+    background-image: linear-gradient(to top, #eaeaea 400px, transparent 400px);
+
+    padding-bottom: 60px;
+  }
 }
 
 .example__title {
@@ -11,33 +24,172 @@
   font-weight: 400;
   color: $basic-black;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.example__wpapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.example__block {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+
+    width: 436px;
+  }
 }
 
 .example__text {
+  margin: 0;
+  padding-top: 33px;
   color: $color-text;
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-top: 70px;
+  }
 }
 
-.example__item-term {
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 24px;
-}
-
-.example__item-definition {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  color: $color-text;
-  text-transform: lowercase;
-}
 
 .example__title-result {
+  margin: 0;
+  margin-top: 18px;
+  margin-bottom: 43px;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 20px;
+    gap: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.example__title-result-container {
+  @media (min-width: $tablet-width) {
+    align-self: center;
+    justify-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 320px;
+  }
+}
+
+.example__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 24px;
+}
+
+.example__list-container {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-sizing: border-box;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
+}
+
+.example__item-term {
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 18px;
+
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  border: 1px solid $border-example;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 22px;
+  }
+}
+
+.example__item-definition {
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-text;
+  text-transform: lowercase;
+  background-color: $dark-grey;
+  text-align: center;
+  width: 82px;
+  margin-top: -10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    background-color: $dark-grey;
+    padding: 0 8px;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
