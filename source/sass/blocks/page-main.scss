@@ -10,14 +10,17 @@
 }
 
 .page-main__intro {
+  display: block;
   margin: 0 0;
   color: $basic-white;
   background-color: $basic_green-2;
   background-image: linear-gradient(to top, $basic-white 171px, transparent 171px),
     url("../img/back-page-main_intro.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  background-size: auto, 320px auto;
+  background-position: 100%, top;
+  width: 100%;
+  // width: 320px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -30,19 +33,9 @@
 
   @media (min-width: $desktop-width) {
     z-index: -2;
-    padding-bottom: 228px;
+    padding-bottom: 245px;
+    background-color: transparent;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   flex-direction: row;
-  //   flex-wrap: wrap;
-  //   justify-content: flex-start;
-  //   padding-right: 110px;
-  //   width: 50%;
-  //   position: relative;
-  //   padding-bottom: 185px;
-  //   margin-right: auto;
-  // }
 }
 
 .page-main__intro-container {
@@ -53,13 +46,6 @@
     margin: 0 auto;
     position: relative;
   }
-
-
-  // @media (min-width: $desktop-width) {
-  //   max-width: 1440px;
-
-  //   margin: 0 auto;
-  // }
 }
 
 .page-main__text-container {
@@ -77,11 +63,12 @@
 
 
 .page-main__title {
-  margin: 0;
   padding: 27px 35px 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  max-width: 474px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -112,14 +99,10 @@
     margin: 0;
     margin-bottom: 49px;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   margin-bottom: 52px;
-  // }
 }
 
 .page-main__img {
-  padding-top: 15px;
+  padding-top: 13px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -127,11 +110,6 @@
     right: 0;
     margin: auto;
     z-index: -1;
-  }
-
-  @media (min-width: $desktop-width) {
-
-    z-index: 1;
   }
 }
 
@@ -144,20 +122,17 @@
     min-width: 244px;
     margin: 0;
   }
-
-  // @media (min-width: $desktop-width) {
-
-  //   margin: 0;
-  //   margin-left: 80px;
-  // }
 }
 
 
 .page-main__link-container {
   margin: 0 auto;
-  padding-left: 117px;
-  position: absolute;
-  left: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 117px;
+    position: absolute;
+    left: 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: -220px;

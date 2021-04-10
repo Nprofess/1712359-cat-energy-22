@@ -35,9 +35,12 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
+
     padding: 0 72px;
     min-height: 201px;
     align-items: center;
+    max-width: 970px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {

@@ -19,6 +19,8 @@
 }
 
 .page-header__container {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -37,18 +39,17 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
-
-    background-image: url("../../img/back_intro.jpg");
-    background-size: 660px auto;
-
-    width: 50%;
-    min-height: 624px;
+    display: block;
+    background: url("../img/back_intro.jpg"),
+      linear-gradient(to right, $basic-white 50%, $basic_green-2 50%);
+    width: 100%;
+    min-height: 680px;
     background-repeat: no-repeat;
-    background-color: #5eaa2f;
     background-position: right bottom;
+    background-size: contain, 100%;
     top: 0;
     right: 0;
-    z-index: -1;
+    z-index: -2;
   }
 }
 
@@ -58,13 +59,12 @@
 }
 
 .page-header__logo-link-container {
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
-
   padding: 14px 24px 14px 0;
 }
 
