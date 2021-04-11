@@ -1,4 +1,41 @@
-// удалить
-.copyright {
-  color: grey;
+.range-before-after {
+  display: block;
+  height: 14px;
+  width: 84px;
+  margin-top: 5px;
+  background-color: $basic-white;
+  border: 1px solid $border-example;
+  border-radius: 6px;
+  box-sizing: border-box;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    background-color: #dcdcdc;
+    border: none;
+    min-width: 428px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 6px;
+    left: 6px;
+    top: 3px;
+    background-color: $basic_green;
+
+    @media (min-width: $tablet-width) {
+      content: url("../img/slider-control.svg");
+      display: block;
+      width: 0;
+      height: 0;
+
+      filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      top: -14px;
+      left: 50%;
+      margin-left: -12px;
+    }
+  }
 }

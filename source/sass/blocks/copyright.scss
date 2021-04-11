@@ -1,5 +1,9 @@
 .copyright {
   padding: 28px 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__link {
@@ -10,4 +14,15 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.copyright-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
