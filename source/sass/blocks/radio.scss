@@ -1,13 +1,26 @@
 .radio {
   padding-left: 43px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 57px;
+  }
 }
 
 .radio__botton {
   position: absolute;
-  margin-top: -6px;
+  margin-top: 10px;
 
   margin-left: -43px;
   width: 30px;
   height: 30px;
   background-image: url("../img/radiobutton.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    width: 40px;
+    height: 40px;
+    margin-left: -57px;
+  }
 }

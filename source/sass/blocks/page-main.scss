@@ -78,10 +78,25 @@
   }
 }
 
+
 .page-main__title-program,
 .page-main__title-catalog {
-  padding-left: 20px;
+  margin: 0;
+  padding-left: $container-padding-mobile;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+    margin-left: 40px;
+    padding-left: $container-padding-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: $container-padding-desktop;
+    max-width: none;
+    padding-top: 49px;
+  }
 }
 
 .page-main__subtitle {

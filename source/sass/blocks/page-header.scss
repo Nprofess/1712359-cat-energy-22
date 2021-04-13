@@ -1,19 +1,17 @@
-
 .page-header {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: $container-padding-mobile;
+  padding-right: $container-padding-mobile;
 
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $container-padding-tablet;
+    padding-right: $container-padding-tablet;
   }
 
   @media (min-width: $desktop-width) {
-
-    padding-left: 110px;
-    padding-right: 110px;
-    padding-top: 20px;
-    width: 1440px;
+    padding-left: $container-padding-desktop;
+    padding-right: $container-padding-desktop;
+    padding-top: 30px;
+    width: $desktop-width;
     margin: 0 auto;
   }
 }
@@ -35,7 +33,7 @@
 }
 
 
-.page-header::after {
+.page-header--one-page::after {
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
