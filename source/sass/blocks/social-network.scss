@@ -1,3 +1,36 @@
+
+.social-network {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+
+.social-network__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 20px 0 18px 0;
+  width: 127px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-left: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+  }
+}
+
+
 .social-network__item-vk {
   @media (min-width: $tablet-width) {
     width: 30px;

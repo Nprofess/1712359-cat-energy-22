@@ -1,13 +1,24 @@
 .check {
   padding-left: 46px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
 }
 
 .check__box {
   position: absolute;
   margin-top: -6px;
-
   margin-left: -46px;
   width: 30px;
   height: 30px;
   background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -60px;
+    width: 40px;
+    height: 40px;
+  }
 }

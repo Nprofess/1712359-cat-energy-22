@@ -28,11 +28,12 @@
 }
 
 .contacts__container {
-  padding: 28px 20px;
+  padding: 31px 20px;
   text-align: start;
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+  margin-bottom: -8px;
 
   @media (min-width: $tablet-width) {
 
@@ -46,10 +47,9 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     content: "";
-
     width: 570px;
     background-color: $basic-white;
-    z-index: 1;    // top: 0;
+    z-index: 1;
     margin-top: 95px;
     margin-left: 110px;
   }
