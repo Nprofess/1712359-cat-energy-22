@@ -16,31 +16,6 @@
 }
 
 
-.main-nav__toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  border: none;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  right: 20px;
-  top: 22px;
-
-  &::before {
-    position: absolute;
-    content: url("../img/icon-menu.svg");
-    width: 24px;
-    height: 24px;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-
 .main-nav__wrapper {
   margin: 0 auto;
   padding: 0;
