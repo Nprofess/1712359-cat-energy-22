@@ -85,6 +85,7 @@
   padding-left: $container-padding-mobile;
   text-align: start;
 
+
   @media (min-width: $tablet-width) {
     padding-top: 33px;
     margin-left: 40px;
@@ -92,10 +93,25 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+
     padding-left: $container-padding-desktop;
     max-width: none;
     padding-top: 49px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.page-main__title-catalog {
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: $container-padding-desktop;
+    padding-right: $container-padding-desktop;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -153,3 +169,11 @@
     margin-left: -220px;
   }
 }
+
+// .page-main__section-container {
+//   @media (min-width: $desktop-width) {
+//     width: 1440px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+// }
