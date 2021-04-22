@@ -198,15 +198,29 @@
   color: $basic-black;
   position: relative;
 
+  &:active {
+    color: rgba($color: $basic-black, $alpha: 0.3);
+  }
+
   &::after {
-    content: url("../img/icon-arrow.svg");
     position: absolute;
+    content: url("../img/icon-arrow.svg");
     left: 100px;
+
 
     @media (min-width: $tablet-width) {
       top: -2px;
       left: 122px;
     }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    content: url("../img/icon_arrow-long.svg");
+  }
+
+  &:active::after {
+    content: url("../img/icon_arrow-long-active.svg");
   }
 
   @media (min-width: $tablet-width) {
@@ -215,6 +229,7 @@
     padding: 0;
   }
 }
+
 
 .nutrition-programs__link-wrapper {
   text-align: start;

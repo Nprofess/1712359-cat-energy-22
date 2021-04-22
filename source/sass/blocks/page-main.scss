@@ -85,26 +85,37 @@
   padding-left: $container-padding-mobile;
   text-align: start;
 
-
   @media (min-width: $tablet-width) {
+    max-width: none;
     padding-top: 33px;
     margin-left: 40px;
     padding-left: $container-padding-tablet;
   }
 
   @media (min-width: $desktop-width) {
-
     padding-left: $container-padding-desktop;
     max-width: none;
     padding-top: 49px;
-    width: 1440px;
+    width: $desktop-width;
     margin: 0 auto;
   }
 }
 
 .page-main__title-catalog {
   @media (min-width: $tablet-width) {
-    padding-left: 0;
+
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1000px) {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
