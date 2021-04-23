@@ -30,6 +30,33 @@
   }
 }
 
+.social-network__item-facebook:hover path,
+.social-network__item-instagram:hover path,
+.social-network__item-vk:hover path,
+.social-network__item-facebook:focus path,
+.social-network__item-instagram:focus path,
+.social-network__item-vk:focus path {
+  stroke: #68b738;
+}
+
+.social-network__item-facebook:active path,
+.social-network__item-instagram:active path,
+.social-network__item-vk:active path {
+  opacity: 0.3;
+}
+
+.copyright__link:hover path {
+  fill: #68b738;
+}
+
+.copyright__link:active path {
+  opacity: 0.3;
+}
+
+.copyright__link:active .copyright__organization {
+  color: rgba($color: #444444, $alpha: 0.3);
+}
+
 
 .social-network__item-vk {
   @media (min-width: $tablet-width) {
@@ -50,4 +77,18 @@
     width: 28px;
     height: 33px;
   }
+}
+
+.page-footer__logo-container {
+  cursor: pointer;
+}
+
+// Это наверное надо делать сменой картинки
+.page-footer__logo-container:active {
+  opacity: 0.3;
+}
+
+.page-footer__logo-container:hover,
+.page-footer__logo-container:focus {
+  opacity: 0.6;
 }

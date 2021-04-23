@@ -16,6 +16,7 @@
     min-width: 428px;
   }
 
+
   &::before {
     content: "";
     position: absolute;
@@ -37,5 +38,15 @@
       left: 50%;
       margin-left: -12px;
     }
+  }
+
+  &:hover::before,
+  &:focus::before {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active::before {
+    content: url("../../img/slider-control_active.svg");
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
   }
 }

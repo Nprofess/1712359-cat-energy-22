@@ -78,10 +78,28 @@
 
 .main-nav__list a {
   color: $basic-black;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__list--one_page-max_width a {
   @media (min-width: $desktop-width) {
     color: $basic-white;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
