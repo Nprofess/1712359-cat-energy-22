@@ -3,6 +3,11 @@
   margin-bottom: 27px;
   color: $color-text;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 49px;
+  }
+
+
   @media (min-width: $desktop-width) {
     margin-left: auto;
     margin-right: auto;
