@@ -413,11 +413,6 @@
     outline: none;
   }
 
-  // &:invalid:focus {
-  //   // box-shadow: 2px 2px 0 0 #ff8282 inset;
-  //   border: 2px solid #ff8282;
-  // }
-
   &:not(:placeholder-shown):invalid {
     border-color: #ff8282;
     border-width: 2px;

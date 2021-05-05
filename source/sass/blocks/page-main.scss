@@ -20,7 +20,11 @@
   background-size: auto, 320px auto;
   background-position: 100%, top;
   width: 100%;
-  // width: 320px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, $basic-white 171px, transparent 171px),
+      url("../img/back-page-main_intro@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -145,12 +149,24 @@
 .page-main__img {
   padding-top: 13px;
 
+  @media (max-width: 767px) {
+    width: 280px;
+    height: 270px;
+  }
+
+
   @media (min-width: $tablet-width) {
     position: absolute;
     left: 0;
     right: 0;
+    top: 211px;
     margin: auto;
     z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+    margin-left: 29%;
   }
 }
 
