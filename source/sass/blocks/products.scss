@@ -75,7 +75,8 @@
     border: none;
     padding: 0;
     margin-bottom: 141px;
-    background-color: $basic-grey;
+    // background-color: $basic-grey;
+    background-image: linear-gradient(to top, $basic-grey 430px, transparent 430px);
   }
 
   @media (min-width: 1000px) {
@@ -137,7 +138,7 @@
     background-size: 100% auto;
 
     @media (min-width: $tablet-width) {
-      margin-left: -20px;
+      margin-left: -25px;
       width: 60px;
       height: 60px;
     }
@@ -148,11 +149,12 @@
   border-bottom: 1px solid $border;
 
   @media (min-width: $tablet-width) {
-    min-height: 429px;
+    height: 429px;
     background-color: $basic-white;
     background-image: none;
     border-bottom: none;
     border: 2px solid #f2f2f2;
+    align-self: flex-end;
   }
 }
 

@@ -39,6 +39,12 @@
     &:hover,
     &:focus {
       border-bottom-style: solid;
+      outline: none;
+    }
+
+    &:active {
+      border: none;
+      outline: none;
     }
   }
 }

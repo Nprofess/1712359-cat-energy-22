@@ -48,13 +48,13 @@
   padding: 21px 5px 24px 5px;
   text-align: center;
 
-  &:nth-last-child(1) {
-    border-bottom: 1px solid $border-list;
+  // &:nth-last-child(1) {
+  //   border-bottom: 1px solid $border-list;
 
-    @media (min-width: $tablet-width) {
-      border: none;
-    }
-  }
+  //   @media (min-width: $tablet-width) {
+  //     border: none;
+  //   }
+  // }
 
   @media (min-width: $tablet-width) {
     border: none;
