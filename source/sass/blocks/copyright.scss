@@ -6,8 +6,25 @@
   }
 }
 
+
 .copyright__link {
   color: $color-text;
+}
+
+.copyright__logo {
+  fill: #666666;
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: #68b738;
+}
+
+.copyright__link:active .copyright__logo {
+  opacity: 0.3;
+}
+
+.copyright__link:active .copyright__organization {
+  color: rgba($color: #444444, $alpha: 0.3);
 }
 
 .copyright__organization {
