@@ -183,29 +183,36 @@
 }
 
 .form__icon-email {
+  stroke: #222222;
   position: absolute;
   right: 15px;
-  top: 23px;
+  top: 17px;
   width: 20px;
   height: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 23px;
+  }
 }
 
 .form__icon-tel {
+  fill: black;
   position: absolute;
   width: 20px;
   height: 21px;
-  top: 19px;
+  top: 14px;
   right: 15px;
+
+  @media (min-width: $tablet-width) {
+    top: 19px;
+  }
 }
 
-.form__input:focus + .form__icon-email path,
-.form__input:focus + .form__icon-email line {
+.form__input:focus + .form__icon-email {
   stroke: #68b738;
 }
 
-.form__input:focus + .form__icon-tel path,
-.form__input:focus + .form__icon-tel line {
-  stroke: #68b738;
+.form__input:focus + .form__icon-tel {
   fill: #68b738;
 }
 
