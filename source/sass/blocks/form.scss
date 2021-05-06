@@ -459,10 +459,14 @@
     background: $basic_green;
     left: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
     flex-grow: 1;
     flex-shrink: 0;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -487,6 +491,13 @@
   padding-top: 25px;
   margin-bottom: 35px;
   padding-right: 40px;
+  background-color: $basic-white;
+
+  @media (max-width: 400px) {
+    width: 241px;
+  }
+  min-width: 241px;
+
 
   &::before {
     position: absolute;
@@ -497,8 +508,13 @@
     background: $basic_green;
     left: 0;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 20px;
+    }
+
 
     @media (min-width: $desktop-width) {
       width: 100%;
@@ -507,6 +523,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 50px;
+    // width: 512px;
   }
 
   @media (min-width: $desktop-width) {

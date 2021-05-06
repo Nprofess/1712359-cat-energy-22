@@ -1,4 +1,16 @@
-// удалить
-.copyright {
-  color: grey;
+@media (max-width: 767px) {
+  .products-img--s {
+    width: 68px;
+    height: 78px;
+  }
+
+  .products-img--m {
+    width: 72px;
+    height: 84px;
+  }
+
+  .products-img--l {
+    width: 84px;
+    height: 100px;
+  }
 }
