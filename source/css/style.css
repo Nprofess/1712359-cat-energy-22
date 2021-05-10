@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Oswald";
+  font-display: swap;
   src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "Oswald";
+  font-display: swap;
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal; }
@@ -787,7 +789,7 @@ img {
       background-image: linear-gradient(to top, #eaeaea 540px, transparent 540px); } }
   @media (min-width: 1440px) {
     .example {
-      background-image: linear-gradient(to top, #eaeaea 400px, transparent 400px);
+      background-image: linear-gradient(to top, #eaeaea 400px, transparent 400px), linear-gradient(to left, red 400px, transparent 400px);
       padding-bottom: 60px; } }
 
 .example__title {

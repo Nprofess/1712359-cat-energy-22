@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon_180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" crossorigin="anonymous" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" crossorigin="anonymous" href="fonts/oswaldregular.woff2" as="font">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -25,7 +27,6 @@
               <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-
         <nav class="main-nav">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
@@ -42,9 +43,7 @@
           </div>
         </nav>
       </div>
-
     </header>
-
       <main class="page-main">
         <div class="page-main__wrapper">
           <h1 class="page-main__title page-main__title-program">Подбор программы</h1>
@@ -76,7 +75,6 @@
                   </ul>
                 </div>
               </fieldset>
-
               <fieldset class="form__fieldset form__fieldset-program">
                 <legend class="form__legend visually-hidden">Выбор программы</legend>
                 <div class="form__container form__container-program">
@@ -97,8 +95,6 @@
                 </div>
               </fieldset>
             </div>
-
-
           <fieldset class="form__fieldset">
             <h2 class="form__fieldset-title form__title-contacts--green-line">Контактные данные (владельца кота)</h2>
             <div class="form__container form__container-contacts-tel">
@@ -123,16 +119,13 @@
                 </li>
               </ul>
             </div>
-
           </fieldset>
           <fieldset class="form__fieldset">
             <h2 class="form__fieldset-title form__fieldset-title-comment form__title--green-line">Комментарий</h2>
             <div class="form__container">
               <textarea class="form__textarea" name="comment" style="width: 100%;" placeholder="Расскажите обо всех повАдках кота"></textarea>
             </div>
-
           </fieldset>
-
           <fieldset class="form__fieldset">
             <h2 class="form__fieldset-title form__title--green-line">Дополнительно</h2>
             <div class="form__container">
@@ -160,9 +153,7 @@
             <button class="form__button-submit button" type="submit">Отправить заявку</button>
             <small class="form__memo-fields">* — Обязательные поля</small>
           </div>
-
           </form>
-
           <section class="contacts">
             <div class="contacts--center">
               <div class="contacts__container">
@@ -175,14 +166,13 @@
                 </div>
               </div>
             </div>
-
             <div class="contacts__map-container">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/map_desktop.jpg 1x, img/map_desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/map_tablet.jpg 1x, imgmap_tablet@2x.jpg 2x">
                 <img class="contacts__map-img" src="img/map.jpg" srcset="img/map@2x.jpg 2x" alt="Местонахождение магазина: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
               </picture>
-              <iframe class="contacts__map" aria-label="Интерактивная карта с адресом магазина: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716382862!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616775586358!5m2!1sru!2sru" width="320" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe class="contacts__map" loading="lazy" aria-label="Интерактивная карта с адресом магазина: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.320858716382862!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616775586358!5m2!1sru!2sru" width="320" height="100%" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </section>
         </div>

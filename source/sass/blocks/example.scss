@@ -10,7 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to top, #eaeaea 400px, transparent 400px);
+    background-image: linear-gradient(to top, #eaeaea 400px, transparent 400px),
+      linear-gradient(to left, red 400px, transparent 400px);
     padding-bottom: 60px;
   }
 }
