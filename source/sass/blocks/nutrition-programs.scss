@@ -1,5 +1,5 @@
 .nutrition-programs {
-  margin-top: 22px;
+  margin-top: 25px;
   margin-bottom: 27px;
   color: $color-text;
 
@@ -9,6 +9,7 @@
 
 
   @media (min-width: $desktop-width) {
+    margin-top: -6px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1440px;
@@ -38,23 +39,25 @@
 
 .nutrition-programs__item-container {
   background-color: $basic-grey;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
     padding-left: 52px;
-    padding-top: 77px;
+    padding-top: 82px;
     padding-right: 65px;
-    padding-bottom: 53px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 78px;
     min-width: 570px;
+    padding-right: 55px;
   }
 }
 
@@ -87,7 +90,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 170px;
+    margin-left: 162px;
     margin-bottom: 73px;
   }
 }
@@ -113,6 +116,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 0;
+    padding-bottom: 27px;
   }
 }
 
@@ -148,12 +152,14 @@
   background-repeat: no-repeat;
   width: 50px;
   height: 53px;
-  margin-left: -71px;
+  margin-left: -67px;
+  top: -9px;
 
   @media (min-width: $tablet-width) {
-    width: 200px;
-    height: 200px;
+    width: 212px;
+    height: 213px;
     right: -12px;
+    top: 2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -178,20 +184,22 @@
   background-repeat: no-repeat;
   width: 67px;
   height: 50px;
-  margin-left: -71px;
+  margin-left: -76px;
+  top: -6px;
 
   @media (min-width: $tablet-width) {
-    width: 286px;
-    height: 200px;
+    width: 278px;
+    height: 199px;
     right: -45px;
+    top: 11px;
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
-    height: 100px;
+    height: 108px;
     margin: 0;
     left: -19px;
-    top: -41px;
+    top: -33px;
   }
 }
 
@@ -218,6 +226,11 @@
     @media (min-width: $tablet-width) {
       top: -2px;
       left: 122px;
+    }
+
+    @media (min-width: $desktop-width) {
+
+      left: 131px;
     }
   }
 

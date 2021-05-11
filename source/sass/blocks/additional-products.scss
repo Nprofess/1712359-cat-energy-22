@@ -7,7 +7,7 @@
     content: "";
     flex-grow: 1;
     flex-shrink: 0;
-    top: 15px;
+    top: 26px;
     height: 2px;
     background: $basic_green;
     width: 100%;
@@ -28,7 +28,8 @@
   text-align: left;
   padding: 0;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
+  margin-top: 11px;
   background-color: $basic-white;
   padding-right: 22px;
   padding-left: 20px;
@@ -40,6 +41,7 @@
     padding-left: 36px;
     padding-right: 36px;
     margin-left: 30px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +59,7 @@
 .additional-products__container-desktop {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1007px 245px;
     column-gap: 79px;
     margin-bottom: 86px;
     width: 1440px;
@@ -72,6 +74,7 @@
   padding: 0;
   padding-left: $container-padding-mobile;
   padding-right: $container-padding-mobile;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     padding-left: $container-padding-tablet;
@@ -108,12 +111,12 @@
     padding-left: 37px;
     padding-right: 37px;
     padding-bottom: 1px;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    column-gap: 38px;
+    grid-template-columns: max-content 1fr;
     justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
@@ -127,6 +130,12 @@
     display: flex;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 245px 1fr;
+    column-gap: 80px;
+  }
 }
 
 .additional-products__name {
@@ -136,6 +145,13 @@
   color: $products-name;
   font-weight: 400;
   text-align: start;
+  margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: -2px;
+  }
 
   @media (min-width: $desktop-width) {
     margin: auto 0;
@@ -146,6 +162,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: -2px;
+
 
   @media (min-width: $desktop-width) {
     width: 285px;
@@ -159,6 +177,15 @@
   font-size: 14px;
   line-height: 14px;
   color: $color-text;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.additional-products__specifications-definition {
+  margin-left: 52px;
 }
 
 .additional-products__link-order {

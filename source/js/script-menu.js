@@ -5,6 +5,7 @@ const nav = document.querySelector(".main-nav");
 
 
 nav.classList.add("main-nav-closed");
+buttonToggleMenu.classList.remove("page-header__toggle-menu-none");
 
 buttonToggleMenu.addEventListener("click", function (evt){
   if (nav.classList.contains("main-nav-closed")){
