@@ -318,6 +318,10 @@
   opacity: 0.3;
 }
 
+.form__input-radio:focus + .form__label-radio::before {
+  outline: 1px solid #bababa;
+}
+
 .form__label-checkbox {
   color: $basic-black;
   padding-left: 46px;
@@ -344,7 +348,6 @@
     }
   }
 }
-
 
 .form__input-checkbox:checked + .form__label-checkbox::before {
   background-image: url("../../img/checkbox-check.svg");
@@ -381,6 +384,10 @@
 
 .form__input-checkbox:disabled + .form__label-checkbox {
   opacity: 0.3;
+}
+
+.form__input-checkbox:focus + .form__label-checkbox::before {
+  outline: 1px solid #bababa;
 }
 
 .form__label-text {
@@ -460,7 +467,17 @@
   clip: rect(0 0 0 0);
 }
 
-.form__title--green-line {
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
+
+.form__fieldset-title--green-line {
   display: inline-block;
   padding-top: 21px;
   margin-bottom: 40px;
@@ -501,7 +518,7 @@
   }
 }
 
-.form__title-contacts--green-line {
+.form__fieldset-title-contacts--green-line {
   display: inline-block;
   padding-top: 25px;
   margin-bottom: 35px;

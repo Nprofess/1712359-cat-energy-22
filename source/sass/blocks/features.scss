@@ -1,4 +1,4 @@
-.features__container {
+.features-container {
   padding-left: $container-padding-mobile;
   padding-right: $container-padding-mobile;
 
@@ -40,7 +40,6 @@
   }
 }
 
-
 .features__list {
   margin: 0;
   list-style: none;
@@ -62,9 +61,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // display: flex;
-    // flex-grow: 1;
-    // justify-content: space-between;
     grid-template-rows: none;
     grid-template-columns: min-content min-content min-content min-content;
     row-gap: 0;
@@ -78,7 +74,6 @@
     margin-right: 30px;
   }
 }
-
 
 .features__item {
   text-align: start;
@@ -195,7 +190,6 @@
   }
 }
 
-
 .features__item-form {
   @media (min-width: $tablet-width) {
     position: relative;
@@ -212,7 +206,6 @@
     z-index: -1;
   }
 }
-
 
 .features__item-dose::before {
   position: absolute;
